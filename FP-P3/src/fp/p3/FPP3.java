@@ -15,12 +15,12 @@ public class FPP3 {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) {// DECLARACION DE VARIABLES
         int n;
         n=introduceNumero();
         Resolver(n);
     }
-        public static int introduceNumero () {
+        public static int introduceNumero () {// METODO PARA RECIVIR NUMERO MAYOR A 0
             int numero;
             Scanner teclado=new Scanner (System.in);
             System.out.println("Introduce Numero mayor a 0");
@@ -28,14 +28,14 @@ public class FPP3 {
             
             return numero;
             }
-        public static void Resolver(int n){
+        public static void Resolver(int n){//Calcular factorial del numero
             int factorial=1;
             while(n!=0){
                 factorial*=n;
                 n --;
               
             }
-            System.out.println("El factorial es " + factorial);
+            System.out.println("El factorial es " + factorial);//imprimir
             
         }
 }
